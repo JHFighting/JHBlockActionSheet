@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 JH. All rights reserved.
 //
 
-#import "JHBlcokActionSheet.h"
+#import "JHBlockActionSheet.h"
 
 @interface JHBlockActionSheetItem ()
 
@@ -45,7 +45,7 @@
 
 @end
 
-@interface JHBlcokActionSheet () <UIActionSheetDelegate>
+@interface JHBlockActionSheet () <UIActionSheetDelegate>
 
 {
     
@@ -61,14 +61,14 @@
 
 @end
 
-@implementation JHBlcokActionSheet
+@implementation JHBlockActionSheet
 
 + (instancetype)actionSheetWithTitle:(NSString *)title
                     cancelButtonItem:(JHBlockActionSheetItem *)cancelItem
                destructiveButtonItem:(JHBlockActionSheetItem *)destructiveItem
                     otherButtonItems:(JHBlockActionSheetItem *)otherItems,...
 {
-    JHBlcokActionSheet *actionSheet = [[JHBlcokActionSheet alloc] initActionSheetWithTitle:title
+    JHBlockActionSheet *actionSheet = [[JHBlockActionSheet alloc] initActionSheetWithTitle:title
                                                                           cancelButtonItem:cancelItem
                                                                      destructiveButtonItem:destructiveItem
                                                                           otherButtonItems:nil];

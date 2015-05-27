@@ -16,7 +16,7 @@
 
 @end
 
-@interface JHBlcokActionSheet : UIActionSheet
+@interface JHBlockActionSheet : UIActionSheet
 
 + (instancetype)actionSheetWithTitle:(NSString *)title
                     cancelButtonItem:(JHBlockActionSheetItem *)cancelItem

@@ -14,7 +14,7 @@
 		CFB74D9F1B1466F00020FF50 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFB74D9E1B1466F00020FF50 /* Images.xcassets */; };
 		CFB74DA21B1466F00020FF50 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFB74DA01B1466F00020FF50 /* LaunchScreen.xib */; };
 		CFB74DAE1B1466F00020FF50 /* ActionSheetBlockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB74DAD1B1466F00020FF50 /* ActionSheetBlockTests.m */; };
-		CFB74DBA1B1467930020FF50 /* JHBlcokActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB74DB91B1467930020FF50 /* JHBlcokActionSheet.m */; };
+		CFB74DBA1B1467930020FF50 /* JHBlockActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB74DB91B1467930020FF50 /* JHBlockActionSheet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +41,8 @@
 		CFB74DA71B1466F00020FF50 /* ActionSheetBlockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActionSheetBlockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFB74DAC1B1466F00020FF50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFB74DAD1B1466F00020FF50 /* ActionSheetBlockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionSheetBlockTests.m; sourceTree = "<group>"; };
-		CFB74DB81B1467930020FF50 /* JHBlcokActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHBlcokActionSheet.h; sourceTree = "<group>"; };
-		CFB74DB91B1467930020FF50 /* JHBlcokActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHBlcokActionSheet.m; sourceTree = "<group>"; };
+		CFB74DB81B1467930020FF50 /* JHBlockActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHBlockActionSheet.h; sourceTree = "<group>"; };
+		CFB74DB91B1467930020FF50 /* JHBlockActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHBlockActionSheet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,8 +126,8 @@
 		CFB74DB71B1467510020FF50 /* JHActionSheet */ = {
 			isa = PBXGroup;
 			children = (
-				CFB74DB81B1467930020FF50 /* JHBlcokActionSheet.h */,
-				CFB74DB91B1467930020FF50 /* JHBlcokActionSheet.m */,
+				CFB74DB81B1467930020FF50 /* JHBlockActionSheet.h */,
+				CFB74DB91B1467930020FF50 /* JHBlockActionSheet.m */,
 			);
 			path = JHActionSheet;
 			sourceTree = "<group>";
@@ -235,7 +235,7 @@
 				CFB74D9A1B1466F00020FF50 /* ViewController.m in Sources */,
 				CFB74D971B1466F00020FF50 /* AppDelegate.m in Sources */,
 				CFB74D941B1466F00020FF50 /* main.m in Sources */,
-				CFB74DBA1B1467930020FF50 /* JHBlcokActionSheet.m in Sources */,
+				CFB74DBA1B1467930020FF50 /* JHBlockActionSheet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +430,7 @@
 				CFB74DB31B1466F00020FF50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CFB74DB41B1466F00020FF50 /* Build configuration list for PBXNativeTarget "ActionSheetBlockTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +439,7 @@
 				CFB74DB61B1466F00020FF50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

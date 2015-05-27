@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "JHBlcokActionSheet.h"
+#import "JHBlockActionSheet.h"
 
 @interface ViewController () <UIActionSheetDelegate>
 
@@ -30,7 +30,7 @@
     }];
     JHBlockActionSheetItem *item4 = [JHBlockActionSheetItem itemWithTitle:@"4" andBlock:nil];
 
-    JHBlcokActionSheet *action = [[JHBlcokActionSheet alloc] initActionSheetWithTitle:@"哈哈" cancelButtonItem:item3 destructiveButtonItem:item1 otherButtonItems:item2, item3, item4,nil];
+    JHBlockActionSheet *action = [[JHBlockActionSheet alloc] initActionSheetWithTitle:@"哈哈" cancelButtonItem:item3 destructiveButtonItem:item1 otherButtonItems:item2, item3, item4,nil];
     [action showInView:self.view];
 }
 
@@ -48,7 +48,7 @@
     }];
     JHBlockActionSheetItem *item4 = [JHBlockActionSheetItem itemWithTitle:@"4" andBlock:nil];
     
-    JHBlcokActionSheet *sheet = [JHBlcokActionSheet actionSheetWithTitle:@"哈哈" cancelButtonItem:item3 destructiveButtonItem:item1 otherButtonItems:item2, item3, item4,nil];
+    JHBlockActionSheet *sheet = [JHBlockActionSheet actionSheetWithTitle:@"哈哈" cancelButtonItem:item3 destructiveButtonItem:item1 otherButtonItems:item2, item3, item4,nil];
     
     [sheet showInView:self.view];
 }
