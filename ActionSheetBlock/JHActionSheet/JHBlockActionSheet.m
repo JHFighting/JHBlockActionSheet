@@ -17,7 +17,7 @@
 /**
  *  相应事件
  */
-@property (nonatomic, assign) dispatch_block_t block;
+@property (nonatomic, copy) dispatch_block_t   block;
 /**
  *  次序标示
  */
@@ -45,18 +45,15 @@
 
 @end
 
-@interface JHBlockActionSheet () <UIActionSheetDelegate>
+@interface JHBlockActionSheet ()  <UIActionSheetDelegate>
 
 {
-    
-    JHBlockActionSheetItem      *_cancelItem;
-    
-    JHBlockActionSheetItem      *_destructiveItem;
-    
     /**
      *  存储其他item
      */
-    NSMutableArray              *_otherButtonItems;
+    NSMutableArray          *_otherButtonItems;
+    JHBlockActionSheetItem  *_cancelItem;
+    JHBlockActionSheetItem  *_destructiveItem;
 }
 
 @end

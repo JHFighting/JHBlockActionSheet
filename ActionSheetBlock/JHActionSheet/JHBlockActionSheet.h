@@ -10,13 +10,15 @@
 
 @interface JHBlockActionSheetItem : NSObject
 
+
+
 + (instancetype)itemWithTitle:(NSString *)title andBlock:(dispatch_block_t)block;
 
 - (instancetype)initItemWithTitle:(NSString *)title andBlock:(dispatch_block_t)block;
 
 @end
 
-@interface JHBlockActionSheet : UIActionSheet
+@interface JHBlockActionSheet : UIActionSheet 
 
 + (instancetype)actionSheetWithTitle:(NSString *)title
                     cancelButtonItem:(JHBlockActionSheetItem *)cancelItem

@@ -22,22 +22,29 @@
 
 - (IBAction)firstButtonClick:(UIButton *)sender
 {
-    JHBlockActionSheetItem *item1 = [JHBlockActionSheetItem itemWithTitle:@"1" andBlock:^{
-        NSLog(@"1");
-    }];
-    JHBlockActionSheetItem *item2 = [JHBlockActionSheetItem itemWithTitle:@"2" andBlock:^{
-        NSLog(@"2");
-    }];
+    __weak __typeof(self)weakSelf = self;
+    
+//    JHBlockActionSheetItem *item1 = [JHBlockActionSheetItem itemWithTitle:@"1" andBlock:^{
+//        NSLog(@"1");
+//    }];
+//    JHBlockActionSheetItem *item2 = [JHBlockActionSheetItem itemWithTitle:@"2" andBlock:^{
+//        NSLog(@"2");
+//    }];
     JHBlockActionSheetItem *item3 = [JHBlockActionSheetItem itemWithTitle:@"3" andBlock:^{
-        NSLog(@"3");
+        [weakSelf showMessage];
     }];
     JHBlockActionSheetItem *item4 = [JHBlockActionSheetItem itemWithTitle:@"4" andBlock:nil];
 
     JHBlockActionSheet *action = [[JHBlockActionSheet alloc] initActionSheetWithTitle:@"哈哈"
                                                                      cancelButtonItem:item3
-                                                                destructiveButtonItem:item1
-                                                                     otherButtonItems:item2, item3, item4,nil];
+                                                                destructiveButtonItem:nil
+                                                                     otherButtonItems:item4,nil];
     [action showInView:self.view];
+}
+
+- (void)showMessage
+{
+    NSLog(@"message");
 }
 
 
