@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF52E4DA1B1562C400552E65 /* JHBlockActionSheet+ImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = CF52E4D91B1562C400552E65 /* JHBlockActionSheet+ImagePicker.m */; };
 		CFB74D941B1466F00020FF50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB74D931B1466F00020FF50 /* main.m */; };
 		CFB74D971B1466F00020FF50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB74D961B1466F00020FF50 /* AppDelegate.m */; };
 		CFB74D9A1B1466F00020FF50 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB74D991B1466F00020FF50 /* ViewController.m */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF52E4D81B1562C400552E65 /* JHBlockActionSheet+ImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JHBlockActionSheet+ImagePicker.h"; sourceTree = "<group>"; };
+		CF52E4D91B1562C400552E65 /* JHBlockActionSheet+ImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JHBlockActionSheet+ImagePicker.m"; sourceTree = "<group>"; };
 		CFB74D8E1B1466F00020FF50 /* ActionSheetBlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActionSheetBlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFB74D921B1466F00020FF50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFB74D931B1466F00020FF50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -128,6 +131,8 @@
 			children = (
 				CFB74DB81B1467930020FF50 /* JHBlockActionSheet.h */,
 				CFB74DB91B1467930020FF50 /* JHBlockActionSheet.m */,
+				CF52E4D81B1562C400552E65 /* JHBlockActionSheet+ImagePicker.h */,
+				CF52E4D91B1562C400552E65 /* JHBlockActionSheet+ImagePicker.m */,
 			);
 			path = JHActionSheet;
 			sourceTree = "<group>";
@@ -232,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF52E4DA1B1562C400552E65 /* JHBlockActionSheet+ImagePicker.m in Sources */,
 				CFB74D9A1B1466F00020FF50 /* ViewController.m in Sources */,
 				CFB74D971B1466F00020FF50 /* AppDelegate.m in Sources */,
 				CFB74D941B1466F00020FF50 /* main.m in Sources */,
