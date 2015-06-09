@@ -60,6 +60,7 @@
 
 @implementation JHBlockActionSheet
 
+
 + (instancetype)actionSheetWithTitle:(NSString *)title
                     cancelButtonItem:(JHBlockActionSheetItem *)cancelItem
                destructiveButtonItem:(JHBlockActionSheetItem *)destructiveItem
@@ -96,7 +97,7 @@
                         otherButtonItems:(JHBlockActionSheetItem *)otherItems,...
 {
     self = [super initWithTitle:title delegate:self
-              cancelButtonTitle:cancelItem.title
+              cancelButtonTitle:nil
          destructiveButtonTitle:destructiveItem.title
               otherButtonTitles:nil];
     
@@ -136,6 +137,20 @@
     item.itemIndex = [self addButtonWithTitle:item.title];
 }
 
+- (void)showInView:(UIView *)view
+{
+    // 避免iOS8以前取消按钮位置出错
+    if (_cancelItem != nil) {
+        [self addButtonWithItem:_cancelItem];
+        if (_destructiveItem == nil) {
+            self.cancelButtonIndex = _otherButtonItems.count - 1;
+        } else {
+            self.cancelButtonIndex = _otherButtonItems.count;
+        }
+    }
+    [super showInView:view];
+}
+
 #pragma mark - ActionSheet Delegate
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
@@ -150,7 +165,7 @@
         if (_destructiveItem && _destructiveItem.block) {
             _destructiveItem.block();
         }
-
+        
     } else {
         
         [_otherButtonItems enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
@@ -159,7 +174,6 @@
                 item.block();
             }
         }];
-        
     }
 }
 
